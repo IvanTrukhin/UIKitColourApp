@@ -29,19 +29,19 @@ class ViewController: UIViewController {
         // MARC: Slider Scale
         sliderRed.value = 1
         sliderRed.minimumValue = 0
-        sliderRed.maximumValue = 15
+        sliderRed.maximumValue = 150
         sliderRed.minimumTrackTintColor = .red
         sliderRed.maximumTrackTintColor = .systemBackground
         
         sliderGreen.value = 1
         sliderGreen.minimumValue = 0
-        sliderGreen.maximumValue = 5
+        sliderGreen.maximumValue = 50
         sliderGreen.minimumTrackTintColor = .green
         sliderGreen.maximumTrackTintColor = .systemBackground
         
         sliderBlue.value = 1
         sliderBlue.minimumValue = 0
-        sliderBlue.maximumValue = 2
+        sliderBlue.maximumValue = 20
         sliderBlue.minimumTrackTintColor = .blue
         sliderBlue.maximumTrackTintColor = .systemBackground
         
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         // MARC: label Change With Value Translation
     
     func changeColourView() {
-        viewColour.backgroundColor = UIColor(red: CGFloat(sliderRed.value), green: CGFloat(sliderGreen.value), blue: CGFloat(sliderBlue.value), alpha: 1)
+        viewColour.backgroundColor = UIColor(red: CGFloat(sliderRed.value) / 255, green: CGFloat(sliderGreen.value) / 255, blue: CGFloat(sliderBlue.value) / 255, alpha: 1)
     }
     
     @IBAction func sliderRedAction(_ sender: Any) {
