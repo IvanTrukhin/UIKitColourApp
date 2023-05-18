@@ -26,33 +26,32 @@ class ViewController: UIViewController {
         
         viewColour.layer.cornerRadius = 10
         
-        // MARC: Slider Scale
+        // MARK: - Slider Scale
         sliderRed.value = 1
         sliderRed.minimumValue = 0
-        sliderRed.maximumValue = 150
+        sliderRed.maximumValue = 255
         sliderRed.minimumTrackTintColor = .red
         sliderRed.maximumTrackTintColor = .systemBackground
         
         sliderGreen.value = 1
         sliderGreen.minimumValue = 0
-        sliderGreen.maximumValue = 50
+        sliderGreen.maximumValue = 255
         sliderGreen.minimumTrackTintColor = .green
         sliderGreen.maximumTrackTintColor = .systemBackground
         
         sliderBlue.value = 1
         sliderBlue.minimumValue = 0
-        sliderBlue.maximumValue = 20
+        sliderBlue.maximumValue = 255
         sliderBlue.minimumTrackTintColor = .blue
         sliderBlue.maximumTrackTintColor = .systemBackground
         
-        // MARC: label Сhange
+        // MARK: - label Сhange
         labelRed.text = String("Red: \(sliderRed.value)")
         labelGreen.text = String("Green: \(sliderGreen.value)")
         labelBlue.text = String("Blue: \(sliderBlue.value)")
-        // Do any additional setup after loading the view.
     }
     
-        // MARC: label Change With Value Translation
+        // MARK: - label Change With Value Translation
     
     func changeColourView() {
         viewColour.backgroundColor = UIColor(red: CGFloat(sliderRed.value) / 255, green: CGFloat(sliderGreen.value) / 255, blue: CGFloat(sliderBlue.value) / 255, alpha: 1)
