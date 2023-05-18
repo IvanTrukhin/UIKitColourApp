@@ -21,29 +21,31 @@ class ViewController: UIViewController {
     @IBOutlet var sliderBlue: UISlider!
     
     
+    @IBOutlet var slidersCollection: [UISlider]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         viewColour.layer.cornerRadius = 10
         
-        // MARK: - Slider Scale
-        sliderRed.value = 1
-        sliderRed.minimumValue = 0
-        sliderRed.maximumValue = 255
+        // MARK: - Minimum Track Tint Color
         sliderRed.minimumTrackTintColor = .red
-        sliderRed.maximumTrackTintColor = .systemBackground
-        
-        sliderGreen.value = 1
-        sliderGreen.minimumValue = 0
-        sliderGreen.maximumValue = 255
         sliderGreen.minimumTrackTintColor = .green
-        sliderGreen.maximumTrackTintColor = .systemBackground
-        
-        sliderBlue.value = 1
-        sliderBlue.minimumValue = 0
-        sliderBlue.maximumValue = 255
         sliderBlue.minimumTrackTintColor = .blue
-        sliderBlue.maximumTrackTintColor = .systemBackground
+        
+        // MARK: - Slider Scale
+        
+        for slider in slidersCollection {
+            configureSlider(slider)
+        }
+        
+        func configureSlider(_ slider: UISlider) {
+            slider.value = 1
+            slider.minimumValue = 0
+            slider.maximumValue = 255
+            slider.maximumTrackTintColor = .systemBackground
+        }
         
         // MARK: - label Сhange
         labelRed.text = String("Red: \(sliderRed.value)")

@@ -24,37 +24,37 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gka-qw-v0E">
-                                <rect key="frame" x="16" y="194" width="34.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="16" y="194" width="28.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLH-st-FWR">
-                                <rect key="frame" x="16" y="254" width="53.5" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="16" y="249.5" width="44" height="28.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnf-El-exC" userLabel="Label Blue">
-                                <rect key="frame" x="16" y="308" width="38.5" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="16" y="308" width="32" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KK1-ES-naZ">
-                                <rect key="frame" x="114" y="194" width="247" height="31"/>
+                                <rect key="frame" x="114" y="192" width="247" height="31"/>
                                 <connections>
                                     <action selector="sliderRedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="7bN-jW-grG"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KUL-kR-mwV">
-                                <rect key="frame" x="114" y="305" width="247" height="31"/>
+                                <rect key="frame" x="114" y="303" width="247" height="31"/>
                                 <connections>
                                     <action selector="sliderBlueAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="lEs-lK-j6B"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2k7-Vh-d1G">
-                                <rect key="frame" x="114" y="251" width="247" height="31"/>
+                                <rect key="frame" x="114" y="249" width="247" height="31"/>
                                 <connections>
                                     <action selector="sliderGreenAcion:" destination="BYZ-38-t0r" eventType="valueChanged" id="gu7-uc-E0F"/>
                                 </connections>
@@ -97,11 +97,14 @@
                         <outlet property="sliderGreen" destination="2k7-Vh-d1G" id="LB9-cc-OAU"/>
                         <outlet property="sliderRed" destination="KK1-ES-naZ" id="xi2-gw-1bb"/>
                         <outlet property="viewColour" destination="f0W-Gv-ijZ" id="RBy-8R-yiu"/>
+                        <outletCollection property="slidersCollection" destination="KK1-ES-naZ" collectionClass="NSMutableArray" id="PkX-LE-zk5"/>
+                        <outletCollection property="slidersCollection" destination="2k7-Vh-d1G" collectionClass="NSMutableArray" id="unX-pz-8tk"/>
+                        <outletCollection property="slidersCollection" destination="KUL-kR-mwV" collectionClass="NSMutableArray" id="62S-iY-cu0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-102" y="72"/>
+            <point key="canvasLocation" x="-342" y="72"/>
         </scene>
     </scenes>
     <resources>
