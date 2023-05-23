@@ -41,19 +41,19 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KK1-ES-naZ">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KK1-ES-naZ" customClass="ConfigureSlider" customModule="UIKitColourApp" customModuleProvider="target">
                                 <rect key="frame" x="114" y="192" width="247" height="31"/>
                                 <connections>
                                     <action selector="sliderRedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="7bN-jW-grG"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KUL-kR-mwV">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KUL-kR-mwV" customClass="ConfigureSlider" customModule="UIKitColourApp" customModuleProvider="target">
                                 <rect key="frame" x="114" y="303" width="247" height="31"/>
                                 <connections>
                                     <action selector="sliderBlueAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="lEs-lK-j6B"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2k7-Vh-d1G">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2k7-Vh-d1G" customClass="ConfigureSlider" customModule="UIKitColourApp" customModuleProvider="target">
                                 <rect key="frame" x="114" y="249" width="247" height="31"/>
                                 <connections>
                                     <action selector="sliderGreenAcion:" destination="BYZ-38-t0r" eventType="valueChanged" id="gu7-uc-E0F"/>
@@ -97,9 +97,6 @@
                         <outlet property="sliderGreen" destination="2k7-Vh-d1G" id="LB9-cc-OAU"/>
                         <outlet property="sliderRed" destination="KK1-ES-naZ" id="xi2-gw-1bb"/>
                         <outlet property="viewColour" destination="f0W-Gv-ijZ" id="RBy-8R-yiu"/>
-                        <outletCollection property="slidersCollection" destination="KK1-ES-naZ" collectionClass="NSMutableArray" id="PkX-LE-zk5"/>
-                        <outletCollection property="slidersCollection" destination="2k7-Vh-d1G" collectionClass="NSMutableArray" id="unX-pz-8tk"/>
-                        <outletCollection property="slidersCollection" destination="KUL-kR-mwV" collectionClass="NSMutableArray" id="62S-iY-cu0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
