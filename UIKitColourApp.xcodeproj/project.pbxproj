@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CB07DFD2A2C91F600B1637B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB07DFC2A2C91F600B1637B /* MainViewController.swift */; };
 		2CB3C77B2973DF5600457B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3C77A2973DF5600457B1D /* AppDelegate.swift */; };
 		2CB3C77D2973DF5600457B1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3C77C2973DF5600457B1D /* SceneDelegate.swift */; };
 		2CB3C77F2973DF5600457B1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3C77E2973DF5600457B1D /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CB07DFC2A2C91F600B1637B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2CB3C7772973DF5600457B1D /* UIKitColourApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitColourApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB3C77A2973DF5600457B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CB3C77C2973DF5600457B1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				2CB3C77A2973DF5600457B1D /* AppDelegate.swift */,
 				2CB3C77C2973DF5600457B1D /* SceneDelegate.swift */,
+				2CB07DFC2A2C91F600B1637B /* MainViewController.swift */,
 				2CB3C77E2973DF5600457B1D /* ViewController.swift */,
 				2CCD7DC12A1CF99400A8FAE6 /* ConfigureSlider.swift */,
 				2CB3C7802973DF5600457B1D /* Main.storyboard */,
@@ -145,6 +148,7 @@
 				2CB3C77F2973DF5600457B1D /* ViewController.swift in Sources */,
 				2CB3C77B2973DF5600457B1D /* AppDelegate.swift in Sources */,
 				2CB3C77D2973DF5600457B1D /* SceneDelegate.swift in Sources */,
+				2CB07DFD2A2C91F600B1637B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
