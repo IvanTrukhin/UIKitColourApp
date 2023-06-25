@@ -7,14 +7,17 @@
 
 import UIKit
 
-class MainViewController: UIView {
+class MainViewController: UIViewController {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let colorVC = segue.destination as! ViewController
+        colorVC.delegate = self
+        colorVC.mainViewColor = view.backgroundColor
     }
-    */
-
+}
+// MARK: - ColorDelegate
+extension MainViewController: ColorViewControllerDelegate {
+    func setColor(_ color: UIColor) {
+        view.backgroundColor = color
+    }
 }
